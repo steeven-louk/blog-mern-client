@@ -1,8 +1,13 @@
 import React from 'react'
+import Sidebar from '../components/sidebar/Sidebar'
+import SinglePost from '../components/singlePost/SinglePost'
 
 const PostDetail = () => {
   return (
-    <div>PostDetail</div>
+    <div className='row'>
+        <SinglePost/>
+        <Sidebar/>
+    </div>
   )
 }
 
