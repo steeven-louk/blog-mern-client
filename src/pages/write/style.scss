@@ -1,0 +1,31 @@
+.write{
+    width: 100%;
+    height: calc(100vh - 110px);
+    overflow-y: hidden;
+
+    .write__controller{
+        width: 100%;
+        .add-icon {
+            margin-top: 10px;
+            .icon_add{
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        input{
+            font-size: 25px;
+            &:active{
+                outline: none!important;
+                outline-style: none;
+                outline-color: transparent;
+                
+            }
+        }
+
+      
+    }
+  textarea{
+            font-size: 20px;
+        }
+}

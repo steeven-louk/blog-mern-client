@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// import "./style.scss";
+import "./style.scss";
 
 export const Post = ({post}) => {
 

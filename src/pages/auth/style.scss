@@ -1,0 +1,36 @@
+.auth_container{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),
+     url(../../../public/assets/feed-image-1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    .login_container{
+        h2{
+            letter-spacing: 3px;
+            font-size: 45px;
+        }
+
+        .form-group{
+            label{
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .btn-top {
+        position: absolute;
+        top: 4em;
+        right: 0;
+        margin-right: 5px;
+        width: 7rem;
+    }
+}

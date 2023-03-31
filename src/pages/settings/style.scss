@@ -1,0 +1,45 @@
+.settings{
+
+  form {
+
+    .setting_pp{
+
+        img{
+            object-fit: cover;
+            width: 120px;
+            height: 120px;
+        }
+
+        label{
+            color: #fff;
+            background: orangered;
+            width: 30px;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+
+        
+    }
+    button{
+        width: 150px;
+        text-transform: capitalize;
+        background: rgb(33, 109, 33);
+        border: none;
+    }
+
+    input{
+        border: 0;
+        border-bottom: 2px solid #ccc;
+    
+        &:active{
+            outline: none!important;
+            outline-color: transparent;
+            outline: none;
+        }
+      }
+  }
+}

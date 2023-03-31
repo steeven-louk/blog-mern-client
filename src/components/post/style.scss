@@ -1,0 +1,30 @@
+.card{
+    img{
+        object-fit: cover;
+        border-radius: 5px;
+        height: 280px;
+    }
+
+    .card-body{
+        padding: 0;
+
+        .card-title{
+            font-weight: bold;
+        }
+
+        .post-date{
+            font-style: italic;
+        }
+
+        .post-desc{
+            color: #444;
+            line-height: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+       
+    }
+}
