@@ -4,7 +4,7 @@ import SinglePost from '../components/singlePost/SinglePost'
 
 const PostDetail = () => {
   return (
-    <div className='row'>
+    <div className='row postDetailHeight' >
         <SinglePost/>
         <Sidebar/>
     </div>

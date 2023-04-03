@@ -30,6 +30,10 @@ a{
   text-decoration: none;
 }
 
+.postDetailHeight{
+  margin-top: 5%;
+}
+
 .icon{
   cursor: pointer;
 }
