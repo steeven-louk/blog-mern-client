@@ -57,13 +57,13 @@ const Write = () => {
       
       {file && <img src={URL.createObjectURL(file)} style={{ 'width':'70vw','height':'250px', 'objectFit':'cover' }} className='img-fluid rounded-2' alt="" />}
       
-      <form onSubmit={postData} enctype= "multipart/form-data" className="px-2 position-relative mt-3">
+      <form onSubmit={postData} encType= "multipart/form-data" className="px-2 position-relative mt-3">
           <div className="write__controller align-items-center d-flex">
             <div className="form-group me-3">
               <label className='icon add-icon' htmlFor="fileInput"><FontAwesomeIcon icon="fa fa-circle-plus" className='icon_add' /></label>
               <input type="file" id='fileInput' name='image' onChange={(e)=>setFile(e.target.files[0])}  className='d-none'/>
             </div>
-            <input type="text" placeholder='Title' value={title} onChange={(e)=> setTitle(e.target.value)} className='form-control border-0' autoFocus={true} />
+            <input type="text" placeholder='Title' value={title} onChange={(e)=> setTitle(e.target.value)} className='form-control border-0' autoFocus />
           </div>
           <div className="write_group form-group">
             <textarea className='form-control border-0' value={desc} onChange={(e)=> setDesc(e.target.value)} placeholder='Tell your story...' res cols="30" rows="10"></textarea>
