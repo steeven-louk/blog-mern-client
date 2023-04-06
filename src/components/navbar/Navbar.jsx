@@ -1,14 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useContext } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import './style.scss';
-import UserProvider from '../../utils/UserContext';
+// import UserProvider from '../../utils/UserContext';
 
 const Navbar = () => {
   // const user = true;
-  const {user} = useContext(UserProvider);
+  // const {user} = useContext(UserProvider);
 // console.log('user')
+
+
+const user = JSON.parse(localStorage.getItem('token'));
 
 
   return (
@@ -42,14 +45,14 @@ const Navbar = () => {
           <Link className="nav-link" to="/write">write</Link>
         </li>
 
-        {!user &&
+        {user &&
         <li className="nav-item">
           <Link className="nav-link" to="/">logout</Link>
         </li>
         }
       </ul>
 
-    {user ? 
+    {!user ? 
     (
       <>
          <ul className="navbar-nav mb-2  text-muted fw-semibold mb-lg-0 text-uppercase">
