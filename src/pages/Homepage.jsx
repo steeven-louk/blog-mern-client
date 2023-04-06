@@ -25,7 +25,7 @@ useEffect(() => {
  getPosts();
 }, []);
 
-
+console.log(posts)
 
 return (
     <>

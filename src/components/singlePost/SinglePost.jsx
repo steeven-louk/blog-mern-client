@@ -41,7 +41,6 @@ const SinglePost = () => {
         getSinglePost();
   }, [path]);
 
-// console.log('path', path);
 console.log('post', post);
 
 const handleUpdate = async() =>{

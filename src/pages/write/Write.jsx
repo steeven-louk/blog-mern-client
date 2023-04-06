@@ -37,8 +37,8 @@ const Write = () => {
       }
     }
 
-    console.log('file', file);
 
+    
     try {
       await axios.post("http://localhost:8080/api/post", newPost);
       setTitle('');

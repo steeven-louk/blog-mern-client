@@ -1,11 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 import './style.scss';
+import UserProvider from '../../utils/UserContext';
 
 const Navbar = () => {
-  const user = true;
+  // const user = true;
+  const {user} = useContext(UserProvider);
+// console.log('user')
+
 
   return (
 
