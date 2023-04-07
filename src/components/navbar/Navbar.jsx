@@ -9,6 +9,7 @@ const Navbar = () => {
   // const user = true;
   // const {user} = useContext(UserProvider);
 // console.log('user')
+const id = JSON.parse(localStorage.getItem('userId'));
 
 
 const user = JSON.parse(localStorage.getItem('token'));
@@ -70,7 +71,7 @@ const user = JSON.parse(localStorage.getItem('token'));
       <>
         <div className="d-inline fw-semibold text-uppercase align-items-center">
 
-        <Link to='/settings'><img src="./assets/member-4.png" className='rounded-pill img-fluid w-25 me-2' alt="member" /></Link>
+        <Link to={'/settings/'+id}><img src="./assets/member-4.png" className='rounded-pill img-fluid w-25 me-2' alt="member" /></Link>
         <span><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /></span>
       
         

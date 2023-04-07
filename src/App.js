@@ -19,8 +19,8 @@ function App() {
         <Route path='/' exact element={ <Homepage/>} />
         <Route path='/write' exact element={<ProtectedRoute><Write/></ProtectedRoute>} />
         <Route path='/post/:postId' exact element={ <PostDetail/>} />
-        <Route path="/settings" element={<ProtectedRoute><Settings/></ProtectedRoute> } />
-        <Route path="/login" element={<ProtectedRoute><Login/></ProtectedRoute> } />
+        <Route path="/settings/:userId" element={<ProtectedRoute><Settings/></ProtectedRoute> } />
+        <Route path="/login" element={<Login/> } />
         <Route path="/register" element={<ProtectedRoute><Register/></ProtectedRoute> } />
       </Routes>
     </div>

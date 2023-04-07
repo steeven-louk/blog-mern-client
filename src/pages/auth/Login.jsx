@@ -30,6 +30,7 @@ const Login = () => {
         setPassword("");
 
         localStorage.setItem('token', JSON.stringify(data?.token));
+        localStorage.setItem('userId', JSON.stringify(data?.user?._id));
         localStorage.setItem('username', JSON.stringify(data?.user?.username));
         
         setTimeout(() => {
